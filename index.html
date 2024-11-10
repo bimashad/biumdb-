@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHD Photo Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BHD Photo Editor</h1>
+    
+    <div class="toolbar">
+      <input type="file" id="upload" accept="image/*">
+      <button onclick="addText()">Add Text</button>
+      <button onclick="applyGrayscale()">Grayscale</button>
+      <button onclick="applySepia()">Sepia</button>
+      <button onclick="removeBackground()">Remove Background</button>
+      <button onclick="rotate()">Rotate</button>
+      <button onclick="crop()">Crop</button>
+      <button onclick="downloadImage()">Download</button>
+    </div>
+    
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
